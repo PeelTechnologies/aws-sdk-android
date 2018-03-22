@@ -1324,7 +1324,7 @@ public class AWSIotMqttManager {
      *
      * @return true equals ready to publish, false equals offline.
      */
-    boolean isReadyToPublish() {
+    public boolean isReadyToPublish() {
         return mqttClient != null && mqttClient.isConnected();
     }
 
